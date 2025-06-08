@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive t-SNE Scatterplots</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
+      background: grey;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h2 {
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    li.white {
+      background: white
+    }
+    li.green {
+      background: #006400
+    }
+    li.red {
+      background: red
+    }
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p.description {
+      margin-top: 8px;
+      font-weight: normal;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class = "white">
+      <h1>Morphological and semantic markers of Ancient Greek terminology: a corpus-based approach</h1>
+      <h2>Choose here between the two clustering methods:</h2>
+    <li class = "green">
+      <a href="tsne.html">t-SNE clustering</a>
+    </li>
+    <li class = "red">
+      <a href="umap.html">UMAP clustering</a>
+    </li>
+  </ul>
+</body>
+</html>
