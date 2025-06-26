@@ -29,22 +29,38 @@
       padding: 15px 20px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	  text-align: center;
     }
+	li > ul {
+	  margin-top: 10px;
+	  padding: 10px 15px;
+	  border-radius: 8px; <!-- maakt kader rond -->
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	}
     li.white {
-      background: white
+      background: white;
     }
-    li.green {
-      background: green
+    ul.green {
+      background: green; <!-- #006400 -->
     }
-    li.red {
-      background: red
+    ul.red {
+      background: red;
     }
+	ul.black {
+	  background: blue;
+	  color: white;
+	}
     a {
       text-decoration: none;
       font-size: 18px;
-      color: black;
       font-weight: bold;
     }
+	a.black {
+	  color: black
+	}
+	a.white {
+	  color: white
+	}
     a:hover {
       text-decoration: underline;
     }
@@ -58,15 +74,33 @@
 </head>
 <body>
   <ul>
-    <li class = "white">
-      <h1>Morphological and semantic markers of Ancient Greek terminology: a corpus-based approach</h1>
-      <h2>Choose here between the two clustering methods:</h2>
-    <li class = "green">
-      <a href="tsne.html">t-SNE clustering</a>
-    </li>
-    <li class = "red">
-      <a href="umap.html">UMAP clustering</a>
-    </li>
+    <li class="white">
+		<h1>Morphological and semantic markers of Ancient Greek terminology: a corpus-based approach</h1>
+	</li>
+	<li class="white">
+		<h2>Plots of words with different senses</h2>
+		<ul class="black">
+			<a class="white" href="σκληρότης.html">Scatterplot of <i>σκληρότης</i></a>
+		</ul>
+		<ul class="black">
+			<a class="white" href="σπασμός.html">Scatterplot of <i>σπασμός</i></a>
+		</ul>
+		<ul class="black">
+			<a class="white" href="κοιλία.html">Scatterplot of <i>κοιλία</i></a>
+		</ul>
+		<ul class="black">
+			<a class="white" href="μανία.html">Scatterplot of <i>μανία</i></a>
+		</ul>
+	</li>
+	<li class="white">
+		<h2>Plots grouped along clustering methods</h2>
+		<ul class="green">
+			<a class="black" href="tsne.html">t-SNE clustering</a>
+		</ul>
+		<ul class="red">
+			<a class="black" href="umap.html">UMAP clustering</a>
+		</ul>
+	</li>
   </ul>
 </body>
 </html>
